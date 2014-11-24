@@ -1,0 +1,19 @@
+
+/* 
+    Created on : Nov 12, 2014, 2:31:58 PM
+    Author     : Anders
+*/
+.button{
+-fx-box-sizing: border-box;
+-fx-border-style: solid;
+-fx-border-width: 3px;
+-fx-width: auto;
+-fx-font-family: "Adobe Garamond Pro",Garamond,Baskerville,"Baskerville Old Face","Hoefler Text","Times New Roman",serif;
+-fx-font-weight: bold;
+-fx-text-transform: uppercase;
+-fx-text-decoration: none;
+-fx-padding: 6px 20px 4px 20px;
+-fx-display: inline-block;
+-fx-text-align: center;
+}
+

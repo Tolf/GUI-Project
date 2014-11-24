@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelNickname" contentDisplay="RIGHT" text="Nickname">
+         <font>
+            <Font name="Monospaced Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelWins" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Wins" GridPane.rowIndex="1">
+         <font>
+            <Font name="Monospaced Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLosses" alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Losses" GridPane.rowIndex="2">
+         <font>
+            <Font name="Monospaced Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfieldNick" GridPane.columnIndex="1">
+         <tooltip>
+            <Tooltip fx:id="tooltipNickname" text="Empty Tooltip" />
+         </tooltip></TextField>
+      <TextField fx:id="tfieldWins" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <tooltip>
+            <Tooltip fx:id="tooltipWin" text="Empty Tooltip" />
+         </tooltip></TextField>
+      <TextField fx:id="tfieldLosses" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <tooltip>
+            <Tooltip fx:id="tooltipLoss" text="Empty Tooltip" />
+         </tooltip></TextField>
+      <Button fx:id="btnSubmit" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" stylesheets="@styleSheet.css" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" stylesheets="@styleSheet.css" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+   </children>
+</GridPane>
